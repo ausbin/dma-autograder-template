@@ -1,0 +1,6 @@
+*.o
+*.log
+*.elf
+*.gba
+*.tar.gz
+tests
