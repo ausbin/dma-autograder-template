@@ -6,7 +6,7 @@
 #define IMAGE_WIDTH 5
 #define IMAGE_HEIGHT 7
 
-const u16 image[IMAGE_WIDTH * IMAGE_HEIGHT];
-const dma_region_t image_regions[IMAGE_HEIGHT];
+extern const u16 image[IMAGE_WIDTH * IMAGE_HEIGHT];
+extern const dma_region_t image_regions[IMAGE_HEIGHT];
 
 #endif
