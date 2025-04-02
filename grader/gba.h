@@ -3,13 +3,13 @@
 
 #include "uint.h"
 
-extern void *fake_dma_page;
 extern volatile u16 *videoBuffer;
 
 #include "dma.h"
 
-// Double volatile is pretty critical here
-#define DMA ((volatile DMA_CONTROLLER *volatile) fake_dma_page)
+extern DMA_CONTROLLER *_fake_dma(void);
+
+#define DMA (_fake_dma())
 #define UNUSED(param) ((void)((param)))
 
 #endif

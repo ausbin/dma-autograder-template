@@ -26,6 +26,8 @@ typedef struct dma_transfer {
 
 extern dma_transfer_t *dma_transfers[];
 
+extern DMA_CONTROLLER *_fake_dma(void);
+
 extern int dma_setup(int, int);
 extern int dma_stop(void);
 extern int dma_teardown(void);
